@@ -1,0 +1,12 @@
+<body>
+% if course_list %
+    <ul>
+    % for course in course_list %
+        <h1>{{ course.name }}</h1>
+        <p>{{ course.description }}</p>
+    % endfor %
+    </ul>
+% else %
+    <p>No courses are available.</p>
+% endif %
+</body>
