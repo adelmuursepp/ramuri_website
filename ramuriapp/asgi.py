@@ -1,5 +1,5 @@
 """
-ASGI config for ibmcoursetestsite project.
+ASGI config for ramuriapp project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ibmcoursetestsite.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ramuriapp.settings')
 
 application = get_asgi_application()
