@@ -1,0 +1,19 @@
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'ramuri/course_list.css' %}">
+</head>
+
+
+<body>
+{% if course_list %}
+    <ul>
+    {% for course in course_list %}
+        <h1>{{ course.name }}</h1>
+        <p>{{ course.description }}</p>
+        <hr>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No courses are available.</p>
+{% endif %}
+</body>

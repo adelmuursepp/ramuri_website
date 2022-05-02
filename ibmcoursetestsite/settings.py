@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'ibmtest.apps.IbmtestConfig',
+    'ramuri.apps.RamuriConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
