@@ -1,3 +1,4 @@
+{% load static%}
 .w-layout-grid {
     display: -ms-grid;
     display: grid;
@@ -11,7 +12,7 @@
   }
   
   body {
-    font-family: Opensaucesans, sans-serif;
+    font-family: 'Opensaucesans', sans-serif ;
     color: #333;
     font-size: 14px;
     line-height: 20px;
@@ -766,7 +767,6 @@
     -ms-flex-align: start;
     align-items: flex-start;
     background-color: #1c3f3a;
-    background-image: url('../images/Hero-CTA-Star.svg');
     background-position: 100% 0%;
     background-size: auto;
     background-repeat: no-repeat;
@@ -1195,7 +1195,6 @@
   .company-image-block-yellow {
     min-height: 400px;
     background-color: #ece8d9;
-    background-image: url('../images/Company-Vector-01.svg');
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1205,7 +1204,6 @@
     position: relative;
     min-height: 400px;
     background-color: #e0eae8;
-    background-image: url('../images/Company-Vector-02.svg');
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1325,7 +1323,6 @@
     -ms-flex-align: center;
     align-items: center;
     background-color: #1c3f3a;
-    background-image: url('../images/CTA-Star.svg');
     background-position: 100% 0%;
     background-size: auto;
     background-repeat: no-repeat;
@@ -1402,7 +1399,6 @@
     -ms-flex-align: center;
     align-items: center;
     background-color: #ece8d9;
-    background-image: url('../images/Video-BG.svg');
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1412,7 +1408,6 @@
     min-height: 412px;
     margin-top: 200px;
     background-color: #ece8d9;
-    background-image: url('../images/Form-Vector.svg');
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2094,7 +2089,6 @@
     margin-bottom: 16px;
     padding-left: 52px;
     border: 1px solid #dde3e4;
-    background-image: url('../images/User-Icon.svg');
     background-position: 3% 50%;
     background-size: auto;
     background-repeat: no-repeat;
@@ -2136,7 +2130,6 @@
     margin-bottom: 16px;
     padding-left: 52px;
     border: 1px solid #dde3e4;
-    background-image: url('../images/Email-Icon.svg');
     background-position: 3% 50%;
     background-size: auto;
     background-repeat: no-repeat;
@@ -2786,7 +2779,6 @@
   .service-image-block {
     min-height: 580px;
     background-color: #ece8d9;
-    background-image: url('../images/Company-Vector.svg');
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2839,7 +2831,6 @@
   .team-image-wrapper {
     height: 350px;
     background-color: #f1f3f3;
-    background-image: url('../images/Company-Vector.svg');
     background-position: 0px 0px;
     background-size: auto;
   }
@@ -3004,7 +2995,6 @@
     position: relative;
     min-height: 520px;
     background-color: #e0eae8;
-    background-image: url('../images/Company-Vector-02.svg');
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3130,7 +3120,6 @@
     -ms-flex-align: center;
     align-items: center;
     background-color: #ece8d9;
-    background-image: url('../images/Concept-Accent.svg');
     background-position: 0px 0px;
     background-size: auto;
   }
@@ -3138,7 +3127,6 @@
   .development-card {
     padding: 24px 40px;
     background-color: #e0eae8;
-    background-image: url('../images/Development-Accent.svg');
     background-position: 50% 100%;
     background-size: auto;
   }
@@ -3146,7 +3134,6 @@
   .research-card {
     padding: 24px 40px;
     background-color: #f1f3f3;
-    background-image: url('../images/Research-Accent.svg');
     background-position: 50% 50%;
     background-size: auto;
   }
@@ -4066,42 +4053,42 @@
   
   @font-face {
     font-family: 'Opensaucesans';
-    src: url('../fonts/OpenSauceSans-Black.ttf') format('truetype');
+    src: url(static("fonts/Opensaucesans-Black.tff")) format('truetype');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: 'Opensaucesans';
-    src: url('../fonts/OpenSauceSans-Bold.ttf') format('truetype'), url('../fonts/OpenSauceSans-ExtraBold.ttf') format('truetype');
+    src: url('{% static "fonts/Opensaucesans-Bold.tff" %}') format('truetype'), url('{% static "fonts/OpenSauceSans-ExtraBold.tff" %}') format('truetype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: 'Opensaucesans';
-    src: url('../fonts/OpenSauceSans-Light.ttf') format('truetype');
+    src: url('{% static "fonts/Opensaucesans-Light.tff" %}') format('truetype');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: 'Opensaucesans';
-    src: url('../fonts/OpenSauceSans-Regular.ttf') format('truetype');
+    src: url('{% static "fonts/Opensaucesans-Regular.tff" %}') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: 'Opensaucesans';
-    src: url('../fonts/OpenSauceSans-Medium.ttf') format('truetype');
+    src: url('{% static "fonts/Opensaucesans-Medium.tff" %}') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: 'Opensaucesans';
-    src: url('../fonts/OpenSauceSans-SemiBold.ttf') format('truetype');
+    src: url('{% static "fonts/OpenSauceSans-SemiBold.tff" %}') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
